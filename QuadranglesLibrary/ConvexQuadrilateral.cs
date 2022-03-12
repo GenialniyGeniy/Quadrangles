@@ -54,7 +54,8 @@ namespace QuadranglesLibrary
         }
         public void Area()
         {
-            S = str[1] / 2 * str[4] * Math.Sin(angle[1]) + str[2] / 2 * str[3] * Math.Sin(angle[3]);
+            S = (str[1]*str[2]*Math.Sin(angle[2] * Math.PI / 180) /2)+(str[3]*str[4]*Math.Sin(angle[4] * Math.PI / 180) /2);
+            Console.WriteLine("Area = {0:f2}",S);
         }
         public void Convex()
         {
